@@ -2,13 +2,17 @@
 <html ng-app="Ron">
   <head>
     <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+
     <!-- Angular -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
-    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
     <!-- JS -->
     <script type="text/javascript" src="app.js">
 
@@ -16,6 +20,17 @@
     <title></title>
   </head>
   <body ng-controller="MainController as ctrl">
-    <h1>{{4+4}}</h1>
+    <img class="main-img img-fluid" src="549120.jpg" alt="Ron Swanson">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 quote">
+          <button type="button" name="button" class="btn" ng-click="ctrl.getQuotes()">Get Quote</button>
+          <br>
+          <p>{{ctrl.quotes}}</p>
+        </div>
+        <div class="col-8">
+        </div>
+      </div>
+  </div>
   </body>
 </html>
