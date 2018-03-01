@@ -1,5 +1,16 @@
 body {
   font-size: 1.5rem;
+  font-family: courier;
+}
+
+i {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: auto;
+}
+
+i:hover {
+  color: white;
 }
 
 .quote {
